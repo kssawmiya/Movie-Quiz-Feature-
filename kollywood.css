@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url(hindimovie.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 130vh;
+}
+header {
+  color: rgb(184, 179, 179);
+  display: flex;
+  height: 10vh;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+#iconbar {
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  opacity: 0;
+  visibility: hidden;
+}
+#iconbar:hover {
+  color: rgb(161, 13, 13);
+}
+.logo {
+  margin-left: 60px;
+  margin-top: 50px;
+}
+.logo img {
+  height: 20vh;
+}
+.logo h3 {
+  color: rgb(223, 0, 0);
+  font-size: 25px;
+  margin-top: -35px;
+
+  margin-left: 50px;
+}
+.nav ul {
+  display: flex;
+}
+.nav ul li {
+  list-style: none;
+}
+.nav ul li a {
+  text-decoration: none;
+  padding: 0px 20px;
+  color: rgb(227, 238, 227);
+}
+.nav ul li a:hover {
+  color: rgb(223, 0, 0);
+  font-weight: bolder;
+}
+.section-container {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.setion-fontSlider {
+  background: rgba(255, 255, 255, 0.5);
+  color: rgb(255, 255, 255);
+  width: 10%;
+  position: fixed;
+  top: 75%;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.setion-fontSlider input {
+  width: 50%;
+}
+
+.setion-fontSlider label {
+  text-align: center;
+}
+
+.review {
+  background: rgb(0, 0, 0);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: rgb(255, 255, 255);
+  height: 100vh;
+  width: 100%;
+}
+
+.movie {
+  background: rgb(0, 0, 0);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.name {
+  color: rgb(255, 255, 255);
+  height: 30vh;
+  width: 100%;
+  animation: textColorChanger 5s linear 2s infinite alternate;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes textColorChanger {
+  0% {
+    color: rgb(255, 255, 255);
+  }
+  50% {
+    color: rgb(237, 49, 49);
+  }
+  100% {
+    color: rgb(255, 0, 0);
+  }
+}
+
+.details {
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.poster {
+  margin: 5px;
+  height: 100%;
+  width: 25%;
+  float: left;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.poster img {
+  height: auto;
+  width: 80%;
+  border: 5px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  animation: borderColorChanger 5s linear 2s infinite alternate;
+}
+
+@keyframes borderColorChanger {
+  0% {
+    border: 5px solid rgb(255, 255, 255);
+  }
+  50% {
+    border: 5px solid rgb(237, 49, 49);
+  }
+  100% {
+    border: 5px solid rgb(255, 0, 0);
+  }
+}
+
+.discription {
+  margin: 5px;
+  height: 100%;
+  width: 70%;
+  float: left;
+  overflow: hidden;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  position: absolute;
+  margin-top: 1px;
+  height: 20vh;
+  color: white;
+  background: #141414;
+  width: 100%;
+}
+
+.logopart img {
+  height: 7vh;
+  margin-left: 10px;
+  margin-top: -50px;
+}
+.logopart h1 {
+  color: rgb(223, 0, 0);
+  font-size: 25px;
+  margin-top: 20px;
+  margin-left: 100px;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.socials i {
+  font-size: 30px;
+  margin-top: 20px;
+  margin-left: 60px;
+  padding: 0px 1px;
+  color: rgb(18, 241, 241);
+}
+
+.hamburger {
+  background-color: transparent;
+  border: 0;
+  color: white;
+  text-decoration: none;
+  display: none;
+  cursor: pointer;
+}
+.hamburger:focus {
+  outline: none;
+}
+.footerbutton2 {
+  margin-top: -50px;
+  background-color: #d3d3d3;
+  text-decoration: none;
+  font-size: 1.3em;
+  border: none;
+  border-left: 5px solid black;
+  padding: 10px 33px;
+  font-weight: 700;
+}
+.footerbutton2:hover {
+  background-color: #5e5756;
+}
+
+@media (max-width: 360px) {
+  .nav ul {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+}

@@ -1,0 +1,359 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  overflow: hidden;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url(movie.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 130vh;
+}
+header {
+  color: rgb(184, 179, 179);
+  display: flex;
+  height: 10vh;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+#iconbar {
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  opacity: 0;
+  visibility: hidden;
+}
+#iconbar:hover {
+  color: rgb(161, 13, 13);
+}
+.logo {
+  margin-left: 60px;
+  margin-top: 50px;
+}
+.logo img {
+  height: 20vh;
+}
+.logo h3 {
+  color: rgb(223, 0, 0);
+  font-size: 25px;
+  margin-top: -35px;
+
+  margin-left: 50px;
+}
+.nav ul {
+  display: flex;
+}
+.nav ul li {
+  list-style: none;
+}
+.nav ul li a {
+  text-decoration: none;
+  padding: 0px 20px;
+  color: rgb(227, 238, 227);
+}
+.nav ul li a:hover {
+  color: rgb(223, 0, 0);
+  font-weight: bolder;
+}
+
+.names {
+  color: red;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+h3.title {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 1em;
+  font-weight: 600;
+  font-style: italic;
+}
+.team-grid {
+  text-align: center;
+}
+.student {
+  width: 25%;
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.team-grid {
+  text-align: center;
+}
+
+.team-grid h4 {
+  font-size: 25px;
+  color: #d21616;
+  font-weight: 600;
+  margin: 40px 0 20px;
+}
+
+.team-grid h5 {
+  font-size: 20px;
+  color: whitesmoke;
+  font-weight: 600;
+  margin: -11px 0 20px;
+}
+
+.team-grid p {
+  color: #777;
+  font-size: 1em;
+}
+
+.stack img {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+  border: 10px solid #fff;
+  border-radius: 3px;
+  box-sizing: border-box;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.stack:last-of-type {
+  margin-right: 0;
+}
+
+/* Third stack example (One stack element rotated in the opposite direction) */
+
+.stack.twisted:before {
+  transform: rotate(4deg);
+}
+
+.stack.twisted:after {
+  transform: rotate(-4deg);
+}
+
+/* Reset all rotations on hover */
+
+.stack:hover:before,
+.stack:hover:after,
+.team-grid:hover .stack:before,
+.team-grid:hover .stack:after {
+  transform: rotate(0deg);
+}
+
+.hoverable__tooltip {
+  opacity: 0;
+}
+
+.hoverable__main:hover > .hoverable__tooltip {
+  opacity: 100%;
+}
+
+/* Stacks creted by the use of generated content */
+.stack:before,
+.stack:after {
+  content: "";
+  border-radius: 3px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 10px solid #fff;
+  left: 0;
+  box-sizing: border-box;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+  transition: 0.3s all ease-out;
+}
+
+.stack:before {
+  top: 4px;
+  z-index: -10;
+}
+
+/* 1st element in stack (behind image) */
+
+.stack:after {
+  top: 8px;
+  z-index: -20;
+}
+
+/* 2nd element in stack (behind image) */
+
+.stack {
+  float: none;
+  width: 92%;
+  margin: 3% 0% 8% 4%;
+  position: relative;
+  z-index: 1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  color: rgb(184, 179, 179);
+  display: flex;
+  height: 10vh;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#iconbar {
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#iconbar:hover {
+  color: rgb(161, 13, 13);
+}
+
+.logo {
+  margin-left: 60px;
+  margin-top: 50px;
+}
+.logo img {
+  height: 20vh;
+}
+.logo h3 {
+  color: rgb(223, 0, 0);
+  font-size: 25px;
+  margin-top: -35px;
+
+  margin-left: 50px;
+}
+
+.nav ul {
+  display: flex;
+}
+
+.nav ul li {
+  list-style: none;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  padding: 0px 20px;
+  color: rgb(227, 238, 227);
+}
+
+.nav ul li a:hover {
+  color: rgb(223, 0, 0);
+  font-weight: bolder;
+}
+
+.footer {
+  position: absolute;
+  margin-top: 405px;
+  height: 20vh;
+  color: white;
+  background: #141414;
+  width: 100%;
+}
+
+.logopart img {
+  height: 7vh;
+  margin-left: 10px;
+  margin-top: -50px;
+}
+.logopart h1 {
+  color: rgb(223, 0, 0);
+  font-size: 25px;
+  margin-top: 20px;
+  margin-left: 100px;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.socials i {
+  font-size: 30px;
+  margin-top: 20px;
+  margin-left: 60px;
+  padding: 0px 1px;
+  color: rgb(18, 241, 241);
+}
+.scroll {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: red;
+  border-radius: 50px;
+  bottom: 100px;
+  right: 50px;
+  text-decoration: none;
+  font-size: 22px;
+  line-height: 50px;
+  text-align: center;
+}
+.scroll i {
+  color: black;
+}
+.hamburger {
+  background-color: transparent;
+  border: 0;
+  color: white;
+  text-decoration: none;
+  display: none;
+  cursor: pointer;
+}
+.hamburger:focus {
+  outline: none;
+}
+.footerbutton2 {
+  margin-top: -50px;
+  background-color: #d3d3d3;
+  text-decoration: none;
+  font-size: 1.3em;
+  border: none;
+  border-left: 5px solid black;
+  padding: 10px 33px;
+  font-weight: 700;
+}
+.footerbutton2:hover {
+  background-color: #5e5756;
+}
+
+@media (max-width: 360px) {
+  .nav ul {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+}

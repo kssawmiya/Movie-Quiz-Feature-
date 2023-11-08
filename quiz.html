@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="logo.png" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="quiz.css" />
+  </head>
+  <body>
+    <!--HEADER PART-->
+    <header>
+      <div class="logo">
+        <img src="logo.png" alt="logo" />
+      </div>
+      <div class="nav">
+        <ul>
+          <li><a href="mainpage.html">Home</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+          <li><a href="store.html">Store</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="sitemap.html">Site Map</a></li>
+          <li><a href="comment.html">Feedback</a></li>
+          <li><a href="student_details.html">About Us</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="home-box custom-box">
+      <h3>Instruction:</h3>
+      <p>Total number of questions: <span class="total-question"></span></p>
+      <button type="button" class="btn" onclick="startQuiz()">
+        Start Quiz
+      </button>
+    </div>
+
+    <div class="quiz-box custom-box hide">
+      <div class="question-number"></div>
+      <div class="question-text"></div>
+      <div class="option-container"></div>
+      <div class="next-question-btn">
+        <button type="button" class="btn" onclick="next()">Next</button>
+      </div>
+      <div class="aswers-indicator"></div>
+    </div>
+
+    <div class="result-box custom-box hide">
+      <h1>Quiz result</h1>
+      <table>
+        <tr>
+          <td>Total Question</td>
+          <td><span class="total-question"></span></td>
+        </tr>
+        <tr>
+          <td>Attampt</td>
+          <td><span class="total-attempt"></span></td>
+        </tr>
+        <tr>
+          <td>Correct</td>
+          <td><span class="total-correct"></span></td>
+        </tr>
+        <tr>
+          <td>Wrong</td>
+          <td><span class="total-wrong"></span></td>
+        </tr>
+        <tr>
+          <td>Percentage</td>
+          <td><span class="percentage"></span></td>
+        </tr>
+        <tr>
+          <td>Your Total Score</td>
+          <td><span class="total-score"></span></td>
+        </tr>
+      </table>
+      <button type="button" class="btn" onclick="tryAgainQuiz()">
+        Try Again
+      </button>
+      <button type="button" class="btn" onclick="location.href='mainpage.html'">
+        Go to home
+      </button>
+    </div>
+    <!---Footer-->
+    <div class="footer">
+      <div class="inside-footer">
+        <div class="footer-container">
+          <div class="logopart">
+            <h1>MY MOVIE</h1>
+          </div>
+        </div>
+        <div class="socials">
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-youtube"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-pinterest"></i>
+        </div>
+        <p style="text-align: center; font-size: 10px; margin-top: -40px">
+          Don't you just love Film?<br />
+          We have all kinds of indian Thriller, Romance, Action, Cosmic Horror
+          and MORE!<br />
+        </p>
+        <form style="display: inline" action="pgsuwa.html">
+          <p>
+            <button class="footerbutton2" style="margin-left: 900px">
+              Page Editor
+            </button>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <script src="question.js"></script>
+    <script src="quiz.js"></script>
+  </body>
+</html>
